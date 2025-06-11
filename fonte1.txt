@@ -1,0 +1,26 @@
+#defina TAM 100
+
+estrutura Teste {
+    
+    inteiro numeroRua
+    caractere endereco[TAM]
+    decimal valor
+    decimal 1.2
+
+}
+
+inteiro inicio(){
+    
+    caractere nome[TAM]
+    inteiro idade
+
+    imprima("Qual seu nome?")
+    escaneie("%s", &nome)
+
+    imprima("Qual sua idade?")
+    escaneie("%d", &idade)
+
+    se(idade<18) pare
+
+    retorna 0
+}
