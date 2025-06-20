@@ -98,6 +98,8 @@ E_COMERCIAL "&"
 
 ESPECIFICADORDEFORMATO \"%[dsf]\"
 
+COMENTARIO "//".*
+
 %%
 
 
@@ -206,6 +208,8 @@ ESPECIFICADORDEFORMATO \"%[dsf]\"
 {ERROCADEIA} {
     printf("Token: %s\nTipo de token: string\nErro: string malformada (aspas nao fechadas)\nLinha: %d\n\n", yytext, linha);
 }
+
+{COMENTARIO} { }
 
 
 

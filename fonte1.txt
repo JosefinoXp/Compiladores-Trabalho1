@@ -1,5 +1,7 @@
 #defina TAM 100
 
+a
+
 estrutura Teste {
     
     inteiro numeroRua
