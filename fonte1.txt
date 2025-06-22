@@ -16,6 +16,8 @@ inteiro inicio(){
     caractere nome[TAM]
     inteiro idade
 
+    idade = 20
+
     imprima("Qual seu nome?")
     escaneie("%s", &nome)
 

@@ -1991,7 +1991,7 @@ int main() {
 
                 switch (opcao2) {
                     case 1:
-                        printf("\t TABELA DE PALAVRAS RESERVADAS \t\n");
+                        printf("\n\n\t TABELA DE PALAVRAS RESERVADAS \t\n\n");
                         analiseLexica(listaPalavraReservadaToken);
                         printf("\t TABELA DE SIMBOLOS \t\n"); 
                         analiseLexica(listaSimboloToken);

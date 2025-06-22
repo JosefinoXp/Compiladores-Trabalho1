@@ -9,6 +9,17 @@ TokenList* listaSimboloToken = NULL;
 // função que insere um novo token na lista encadeada de tokens
 TokenList* insereNaLista(TokenList* listaToken, char* nome, char* token, char* tipo_erro, int linha) {
 
+    if (strcmp(token, "id") == 0) {
+        TokenList* aux = listaToken;
+        while (aux != NULL) {
+            if (strcmp(aux->nome, nome) == 0 && strcmp(aux->token, "id") == 0) {
+                // Já existe, não insere novamente
+                return listaToken;
+            }
+            aux = aux->prox;
+        }
+    }
+
     // aloca dinamicamente um novo nó (token)
     TokenList* no = (TokenList*)malloc(sizeof(TokenList));
 
