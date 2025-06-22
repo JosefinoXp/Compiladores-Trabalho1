@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include "tokens.h"
 
-TokenList* listaToken = NULL;
+TokenList* listaPalavraReservadaToken = NULL;
+TokenList* listaSimboloToken = NULL;
 
 // função que insere um novo token na lista encadeada de tokens
 TokenList* insereNaLista(TokenList* listaToken, char* nome, char* token, char* tipo_erro, int linha) {

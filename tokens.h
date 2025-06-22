@@ -13,7 +13,8 @@ typedef struct no {
 } TokenList;
 
 // variável global apontando pra o inicio da lista de tokens
-extern TokenList* listaToken;
+extern TokenList* listaPalavraReservadaToken;
+extern TokenList* listaSimboloToken;
 // foi usado extern para evitar multiplas declarações pois ja está sendo declarado no tokens.c
 
 // insere um novo token ou erro na lista encadeada
